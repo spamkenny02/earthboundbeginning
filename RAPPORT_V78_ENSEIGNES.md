@@ -23,7 +23,7 @@ Les 32 champs distincts sont couverts dans chaque profil. Au total, 66 inscripti
 ## Reste précis
 
 - Podunk : HOPITAL et HOTEL restent sans circonflexe, y compris dans le profil accents. LeV réutilise l’ancien B retiré ; M est le W natif retourné verticalement. Aucun autre doublon à deux couches n’a été trouvé pour ajouterÔ dans ce périmètre conservateur. Résoudre cette capacité graphique sans altérer un caractère de Podunk ni les couches hors inscription ; ne pas annoncer ces accents comme terminés.
-- Petits panneaux encore anglais : sprite 442, HOTEL/STAY/HERE, réellement visible devant les hôtels ; sprite 436, YOU ARE HERE, et 446, HINT ; qualifier finement 213 avant de nommer son inscription. Modifier seulement les pixels textuels possédés si cette étape est traitée, pas les personnages, bordures, dimensions ou collisions.
+- Petits panneaux encore anglais : sprite 442, HOTEL/WELCOME, réellement visible devant les hôtels ; sprite 436, YOU ARE HERE (aucun placement PNJ connu ; curseur de carte observé différent), et 446, HINT ; qualifier finement 213 avant de nommer son inscription. Modifier seulement les pixels textuels possédés si cette étape est traitée, pas les personnages, bordures, dimensions ou collisions.
 - Pictogrammes de carte : bloc comprimé2CF1F9 (9216 octets décomprimés, fin2CFA8B), champsFOOD/HOSPITAL/DEPTSTORE/HINT/SHOP/HOTEL et toponymes descriptifs ; ensuite étiquettes des mélodies20B16D. Les noms propres et cognats ne servent pas au quota.
 - LIVE HOUSE demande une décision de terminologie contextualisée ; ne pas le classer arbitrairement comme texte dormant. Les conditions naturelles de fin, accès calculés non résolus et la relecture complète restent ouverts. Les états privés disponibles sont précoces.
 
