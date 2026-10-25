@@ -1,0 +1,7 @@
+# Correction de la preuve d’équipement
+
+Le don natif `1D00` renvoie l’identifiant du personnage destinataire. Il ne renvoie pas l’emplacement d’inventaire. La copie `0D00` suivie de `1F83 personnage 00` utilisait donc un mauvais argument dans les préparations de la fin et du bonus de niveau. Les rapports et dix enregistrements concernés retirent leur affirmation d’équipement vérifié ; leurs images, commandes, empreintes et résultats effectivement observés restent inchangés.
+
+Trois préparations isolées, pilotées par la Carte bancaire depuis le même état privé, vérifient cette distinction : le don du Lance-pierre retourne 1 ; utiliser ce 1 comme emplacement marque la Carte bancaire équipée ; l’emplacement explicite 2 marque le Lance-pierre équipé. Le retour 0 de la commande d’équipement est l’ancien emplacement, pas un indicateur d’échec. Les fonctions primaires `give_item_to_character.asm`, `give_item_to_specific_character.asm`, `equip_item.asm` et `change_equipped_weapon.asm` du moteur ebsrc corroborent les résultats.
+
+Les six captures sont conservées dans `tests/emulation_v78_give_return`. Un témoin scalaire en lecture seule indique l’argument actif ; aucun dump mémoire, état, cœur ou ROM n’est distribué. Cette correction documentaire ne constitue aucune nouvelle traduction et ne modifie pas les IPS. Le nouveau parcours du marchand utilise l’emplacement explicite 2, vérifié visuellement avant la confiscation.

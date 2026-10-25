@@ -1,0 +1,15 @@
+# Marchand d’armes : article dynamique et parcours complet
+
+La phrase du PNJ598 assemblait « J’ai enfin eu a Lance-pierre! ». Elle devient « Arme en stock : Lance-pierre. », avec deux champs français réparés et aucun nouveau texte source compté. Le préfixe16 octets351ADF et le point351AF9 restent de même longueur ; l’opérande351AF0 utilise l’auxiliaire neutre existant32AA40. Celui-ci conserve les deux commandes de classification de38B551 et renvoie pour les cinq classes. Aucun nouvel espace alloué, aucune modification des sprites ou de la banque25.
+
+La préparation donne le Lance-pierre32 à Ninten, équipe explicitement l’emplacement2, ajoute10000 dollars et utilise deux destinations de warp natives. L’inventaire montre le Lance-pierre équipé avant le dialogue ordinaire du barman883. Les choix à la manette déclenchent l’arrestation, la prison et la confiscation : le stock du marchand est produit par la véritable commande1A12. Le drapeau038D acquis pendant cette scène permet au prochain usage ordinaire de la Carte bancaire de conduire au marchand598. Aucun appel direct de son dialogue, aucune injection de stock ou écriture directe de mémoire vive.
+
+Le marchand, abordé par sa droite, propose l’arme à52 dollars : refuser conserve10020 dollars ; accepter lors de la conversation suivante laisse9968 dollars et restitue le Lance-pierre dans l’inventaire. La conversation ultérieure indique le stock vide. Les lecteurs1A13 et1A14 et la chaîne de confiscation sont qualifiés par ce parcours. Le voyage initial, l’acquisition de l’arme et les fonds ne sont pas naturels : ils sont préparés explicitement.
+
+Deux profils, avant/après :144 références de captures,72 paires et59 PNG uniques. Douze paires changent dans le seul texte du marchand, rectangle104,16–240,48 ; les60 autres sont identiques. L’affichage, les choix, les montants, la restitution et le stock observés concordent dans les quatre exécutions. Les binaires et états de préparation restent privés.
+
+La fermeture bornée des PNJ placés, callbacks natifs et aides qualifiées est recalculée car le pointeur d’article change :3896 racines par profil, aucun HP résiduel et aucune erreur de lecture. Les six anciennes racines d’articles disparaissent de cette fermeture en utilisant l’auxiliaire neutre déjà présent ; il ne s’agit ni de six traductions ni d’une preuve de couverture du jeu entier.
+
+Compteurs inchangés :106 nouvelles sources dans le même lot en cours,355 historiques,464 unités/plages sources,137 publiées et218 en attente. Les réparations françaises atteignent57 champs/plages ; la jauge graphique PV est séparée. Le lot400 reste ouvert, sans conclusion de complétude ni publication sur main.
+
+Validation : la suite136 exécute135 tests réussis et un échec de comparaison du registre dû à deux métadonnées ajoutées hors générateur. Ces deux métadonnées ont été retirées du registre ; le test concerné repasse séparément. Aucun échec restant connu, zéro test ignoré ; il ne s’agit pas d’une seconde suite136 globale. La reconstruction complète reproduit les deux IPS octet pour octet : accents8296c458…eaed641, ASCII93739c30…fa409cc.
