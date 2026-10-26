@@ -1,0 +1,43 @@
+{
+  "status": "recovery_instructions_only_not_a_release",
+  "last_fully_restored_checkpoint": "0df2d43c6c64b54cc2e7cbf8faa1dffd2fbbb749",
+  "base_tree": "2fe445ee696271ae5d3f75f75a9a8e8679142963",
+  "source_rom_sha256": "e878b83e9b00b51f8da6d038a5cbaf31cb9dccff5e11f0a7014048f4511f582c",
+  "records": [
+    {
+      "offset": "352D53",
+      "hex": "70799c50a295a3a4955093919c9d955095a450999d9d9f92999c955e5050"
+    }
+  ],
+  "new_distinct_sources": 1,
+  "previous_current_execution_distinct_sources": 125,
+  "current_execution_distinct_sources_after_teddy": 126,
+  "historical_total_after_teddy": 375,
+  "physical_source_spans_after_teddy": 554,
+  "pending_since_published_after_teddy": 238,
+  "french_corrections_not_new_sources": 61,
+  "observed_local_tests": {
+    "run": 10,
+    "failures": 0,
+    "errors": 0,
+    "skipped": 0,
+    "new_methods": 2,
+    "known_distinct": 164,
+    "whole_164_suite_repeated": false
+  },
+  "observed_local_emulation": {
+    "runs": 8,
+    "capture_references": 40,
+    "comparison_pairs": 20,
+    "unique_png": 12,
+    "changed_text_only_pairs": 4,
+    "native_Voir_used": true,
+    "text_called_directly": false,
+    "initial_injury_and_travel_prepared": true
+  },
+  "local_png_json_and_git_diff_recovery_not_verified_after_environment_unavailable": true,
+  "reconstructed_source_files_local_byte_hash_not_available": true,
+  "ips_rebuild_after_recovery_not_executed": true,
+  "raw_memory_or_private_binaries_included": false,
+  "completion_or_400_requirement_satisfied": false
+}
